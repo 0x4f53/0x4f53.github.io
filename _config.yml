@@ -21,7 +21,7 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 lsi: false
-description: your resume
+description: My projects, career etc
 baseurl: "/jekyll-timeline"
 url: http://himsel.me
 color: "#f2f2f2"

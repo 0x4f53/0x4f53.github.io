@@ -1,14 +1,27 @@
-url: http://kirbyt.github.io
-baseurl: /timeline-jekyll-theme
-
-# Site Settings
-title: Timeline
-description: "Timeline is multipurpose, single page Jekyll theme that includes a timeline section."
-keywords: "jekyll, theme"
-google-tracking-id:
-
-# Career Settings
-# Default career thumbnail image.
-career-img: "img/timeline/default.jpg"
-
-exclude: ["Rakefile", "LICENSE", "readme.markdown"]
+---
+title: Journey so far...
+timezone: Asia/Kolkata
+collections:
+  posts:
+    title: Posts
+    output: true
+  steps:
+    title: Steps
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: steps
+  values:
+    title: 
+    date: 2016-09-01 00:00:00 -0700
+markdown: kramdown
+highlighter: rouge
+lsi: false
+description: your resume
+baseurl: "/jekyll-timeline"
+url: http://himsel.me
+color: "#f2f2f2"

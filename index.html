@@ -3,7 +3,55 @@ layout: default
 ---
 
 <div class="container row">
-    <h2 class="cv-title"><span class="black white-text">{{ site.title }}</span></h1>
+    <br><br>
+    <h2 align="center">Owais Shaikh</h2>
+    <h4 align="center">Software Engineer ⋅ Security Researcher</h4>
+    <br>
+    <div align="center">
+
+        <a href="https://github.com/4f77616973" target="_blank">
+            <div class="chip">
+                <img src="assets/github.svg">
+                GitHub
+            </div>
+        </a>
+
+        <a href="https://gitlab.com/ThomasCat" target="_blank">
+            <div class="chip">
+                <img src="assets/gitlab.svg">
+                GitLab
+            </div>
+        </a>
+
+
+        <a href="https://twitter.com/o_0x4f" target="_blank">
+            <div class="chip">
+                <img src="assets/twitter.svg">
+                Twitter
+            </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/the-only-owais-shaikh/" target="_blank">
+            <div class="chip">
+                <img src="assets/linkedin.svg">
+                LinkedIn
+            </div>
+        </a>
+
+        <a href="mailto:0x4f@tuta.io" target="_blank">
+            <div class="chip">
+                <img src="assets/email.svg">
+                Email
+            </div>
+        </a>
+
+    </div>
+    
+    <br><hr><br>
+</div>
+
+<div class="container row">
+    <h3 class="cv-title"><span class="black white-text">{{ site.title }}</span></h1>
     {% assign steps = site.steps | sort: 'date' | reverse %}
     {% for step in steps %}
     <div class="item">
@@ -12,7 +60,7 @@ layout: default
         <div class="card-panel">
             <h4 class="card-title">
                 {{ step.title }}
-            </h3>
+            </h4>
             <p>
                 {{ step.content }}
             </p>
@@ -23,4 +71,4 @@ layout: default
         <i class="vertical-line"></i>
         
     </div>
-    </div>
+</div>

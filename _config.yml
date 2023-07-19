@@ -23,5 +23,5 @@ highlighter: rouge
 lsi: false
 description: My projects, career etc
 baseurl: "/jekyll-timeline"
-url: http://himsel.me
+url: https://4f77616973.github.io
 color: "#f2f2f2"

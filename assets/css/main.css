@@ -1,59 +1,82 @@
 body {
-font-size:20px;
-font-family:'Product Sans',sans-serif
+    font-size: 20px;
+    font-family: 'Product Sans', sans-serif
 }
+
 img {
-max-width:100%
+    max-width: 100%
 }
-h1,h2,h3,h4,h5,h6 {
-font-family:'Product Sans',sans-serif;
-text-transform: full-width;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Product Sans', sans-serif;
+    text-transform: full-width;
 }
+
 .item {
-padding-top:100px;
-min-height:150px;
-position:relative
+    padding-top: 100px;
+    min-height: 150px;
+    position: relative
 }
-.item:before,.last-item:after {
-background:#fff;
-border:8px solid #000;
-border-radius:50%;
-width:40px;
-height:40px;
-display:inline-block;
-content:"";
-margin-left:1rem;
-position:relative;
-z-index:1;
-left:calc(2% - 36px)
+
+.item:before,
+.last-item:after {
+    background: #fff;
+    border: 8px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    content: "";
+    margin-left: 1rem;
+    position: relative;
+    z-index: 1;
+    left: calc(2% - 36px)
 }
+
 .vertical-line {
-width:8px;
-background-color:#000;
-position:absolute;
-left:calc(2% - 5px);
-top:0;
-bottom:0
+    width: 8px;
+    background-color: #000;
+    position: absolute;
+    left: calc(2% - 5px);
+    top: 0;
+    bottom: 0
 }
+
 .item .card-panel {
-margin:0;
-margin:2rem 0 0 3rem;
-border-radius: 25px;
+    margin: 0;
+    margin: 2rem 0 0 3rem;
+    border-radius: 25px;
 }
+
 .item-date {
-margin-top:-60px;
-margin-left:4.5rem
+    margin-top: -60px;
+    margin-left: 4.5rem
 }
+
 .cv-title {
-margin-bottom:0;
-margin-left:calc(2% - 5px);
-line-height:190%
+    margin-bottom: 0;
+    margin-left: calc(2% - 5px);
+    line-height: 190%
 }
+
 .cv-title span {
-padding:1rem
+    padding: 1rem
 }
-.last-item{
-padding-top:80px;
-height:70px;
-position:relative
+
+.last-item {
+    padding-top: 80px;
+    height: 70px;
+    position: relative
 }
+
+hr {
+    border: none;
+    height: 1px;
+    color: #333;  /* old IE */
+    background-color: #333;  /* Modern Browsers */
+  }

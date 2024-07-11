@@ -73,10 +73,3 @@ h6 {
     height: 70px;
     position: relative
 }
-
-hr {
-    border: none;
-    height: 0.5px;
-    color: #808080;  /* old IE */
-    background-color: #808080;  /* Modern Browsers */
-  }

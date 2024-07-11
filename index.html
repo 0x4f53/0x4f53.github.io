@@ -4,7 +4,7 @@ layout: default
 
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9624599461311442"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <meta name="google-adsense-account" content="ca-pub-9624599461311442">
 </head>
 
@@ -12,19 +12,21 @@ layout: default
     <br>
 
     <img src="https://avatars.githubusercontent.com/u/71916237?v=4" width="125">
-    
+
     <h3>Owais Shaikh</h3>
-    <h5>Security Researcher  &nbsp;×&nbsp;  Software Engineer</h5>
-    
+    <h5>Security Researcher &nbsp;×&nbsp; Software Engineer</h5>
+
     <a href="https://docs.google.com/document/d/1uOr6s3d2QueQjfH3GzVnUNHpAhw8Akxv">
         <p>View résumé</p>
     </a>
 
-    <hr/>
-    
-    <p>Hi, I'm Owais. I'm a Security Researcher. I believe in solving complex problems with simple solutions. I love breaking things down and exploring them in-depth, routinely getting my hands messy with new tech. I love contributing to open-source in any way I can.</p>
+    <hr />
 
-    <hr/>
+    <p>Hi, I'm Owais. I'm a Security Researcher. I believe in solving complex problems with simple solutions. I love
+        breaking things down and exploring them in-depth, routinely getting my hands messy with new tech. I love
+        contributing to open-source in any way I can.</p>
+
+    <hr />
 
     <p>Connect with me</p>
     <a href="mailto:me@0x4f.in">Email</a>
@@ -38,16 +40,22 @@ layout: default
     <a rel="me" href="https://mastodon.social/@0x4f">Mastodon</a>
 
     <br><br>
-    <details> 
-      <summary>OpenPGP key ▸</summary> 
-      <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/5B4877332829B7F48ABEC1CBCA2D14E0F9F73BA8"><code>5B48 7733 2829 B7F4 8ABE C1CB CA2D 14E0 F9F7 3BA8</code></a>
+    <details>
+        <summary>OpenPGP key ▸</summary>
+        <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/5B4877332829B7F48ABEC1CBCA2D14E0F9F73BA8">
+            <code>5B48 7733 2829 B7F4 8ABE C1CB CA2D 14E0 F9F7 3BA8</code>
+        </a>
     </details>
 
-    <hr/>
+    <hr />
 
     <p>Donation links</p>
-    <img src="https://github.com/0x4f53/0x4f53/raw/main/donation_badges/sponsors.png" alt="GitHub Sponsors" width="72"/></a><a href="https://www.paypal.me/0x4f"><img src="https://github.com/0x4f53/0x4f53/raw/main/donation_badges/paypal.png" alt="PayPal" width="90"/></a><a href="https://buymeacoffee.com/0x4f"><img src="https://github.com/0x4f53/0x4f53/raw/main/donation_badges/bmac.png" alt="Buy Me A Coffee" 
-        width="136"/></a><a href=bitcoin.md><img src="https://github.com/0x4f53/0x4f53/raw/main/donation_badges/bitcoin.png" alt="Bitcoin address" width="100"/></a><a href="https://raw.githubusercontent.com/0x4f53/0x4f53.github.io/master/assets/upi_code.png"><img src="https://github.com/0x4f53/0x4f53/raw/main/donation_badges/gpay.png" alt="GPay" width="75"/></a><!--<a href="https://liberapay.com/0x4f53"><img src="https://github.com/0x4f53/0x4f53/raw/main/donation_badges/liberapay.png" alt="LiberaPay"  width="130"/></a><a href="https://ko-fi.com/o_0x4f">--><img src="https://github.com/0x4f53/0x4f53/raw/main/donation_badges/kofi.png" alt="Ko-Fi"  width="235"/></a>
+    <a href="https://github.com/sponsors/0x4f53/"><img src="donation_badges/sponsors.png" alt="GitHub Sponsors" width="72" /></a>
+    <a href="https://www.paypal.me/0x4f"><img src="donation_badges/paypal.png" alt="PayPal" width="90" /></a>
+    <a href="https://buymeacoffee.com/0x4f"><img src="donation_badges/bmac.png" alt="Buy Me A Coffee" width="136" /></a>
+    <a href=bitcoin.md><img src="donation_badges/bitcoin.png" alt="Bitcoin address" width="100" /></a>
+    <a href="https://raw.githubusercontent.com/0x4f53/0x4f53.github.io/master/assets/upi_code.png"><img src="donation_badges/gpay.png" alt="GPay" width="75" /></a>
+    <a href="https://ko-fi.com/o_0x4f"><img src="donation_badges/kofi.png" alt="Ko-Fi" width="235" /></a>
 
 </div>
 
@@ -56,24 +64,24 @@ layout: default
 <br>
 <div class="container row">
     <h3 class="cv-title"><span class="black white-text">microblog</span></h1>
-    {% assign steps = site.steps | sort: 'date' | reverse %}
-    {% for step in steps %}
-    <div class="item">
-        <i class="vertical-line"></i>
-        <h3 class="item-date">{{ step.date | date: '%B %Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y' }}{% endif %}</h2>
-        <div class="card-panel">
-            <h4 class="card-title">
-                {{ step.title }}
-            </h4>
-            <p>
-                {{ step.content }}
-            </p>
+        {% assign steps = site.steps | sort: 'date' | reverse %}
+        {% for step in steps %}
+        <div class="item">
+            <i class="vertical-line"></i>
+            <h3 class="item-date">{{ step.date | date: '%B %Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y'
+                }}{% endif %}</h2>
+                <div class="card-panel">
+                    <h4 class="card-title">
+                        {{ step.title }}
+                    </h4>
+                    <p>
+                        {{ step.content }}
+                    </p>
+                </div>
         </div>
-    </div>
-    {% endfor %}
-    <div class="last-item">
-        <i class="vertical-line"></i>
-        
-    </div>
-</div>
+        {% endfor %}
+        <div class="last-item">
+            <i class="vertical-line"></i>
 
+        </div>
+</div>

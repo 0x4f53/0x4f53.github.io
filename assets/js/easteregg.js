@@ -9,11 +9,11 @@ function easterEgg() {
         var easterEggDescription = "";
 
         if (/<.{3,}>/.test(message)) {
-            easterEggDescription = "\nNice, you found an XSS injection vulnerability!";
+            easterEggDescription = "\nNice, you found an XSS vulnerability!";
             document.getElementById('pgpkey').innerHTML = message;
 
         } else {
-            easterEggDescription = "\nNice, you found an plaintext injection!";
+            easterEggDescription = "\Congratulations, you just discovered plaintext injection!";
             document.getElementById('pgpkey').innerText = message + "\n\n😉 Want a payload? Try: <img src/onerror=prompt(8)>";
         }
 

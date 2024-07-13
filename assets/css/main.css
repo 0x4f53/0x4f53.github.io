@@ -73,3 +73,8 @@ h6 {
     height: 70px;
     position: relative
 }
+
+hr {
+    opacity: 25%;
+    border-top: 1px dotted;
+}

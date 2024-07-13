@@ -8,29 +8,7 @@ layout: default
     <meta name="google-adsense-account" content="ca-pub-9624599461311442">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script>
-        var message = location.search.split('message=')[1];
-        
-        function easterEgg() {
-            if (message.length > 1) {
-                message = decodeURIComponent(message);
-                document.getElementById('name').innerHTML = "Ȟ̵̤̩̉̀̊Ä̵̠̣̲̤́̎C̶̨̢̟̠͊̎́K̴͓̥̀̓̾̾E̸͈͉̺͋͆̎Ȑ̴̨́M̴̖̈́̄̈́͜Á̶͓̊͌̈́͜͜N̵̺͖̬͌̈̔";
-                var easterEggDescription = "";
-                
-                if (/<.{3,}>/.test(message))
-                    easterEggDescription = "\nNice, you found an XSS injection vulnerability!";
-                
-                else {
-                    easterEggDescription = "\nNice, you found an plaintext injection!";
-                    document.getElementById('pgpkey').innerText = "😉 Want a payload? Try: <img%20src/onerror=prompt(8)>";
-                }
-                
-                document.getElementById('occupation').innerText = easterEggDescription;
-                document.getElementById('photo').src = "assets/ryanbeckford.gif";
-            }
-        }
-    
-    </script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/easteregg.js"></script>
 
 </head>
 

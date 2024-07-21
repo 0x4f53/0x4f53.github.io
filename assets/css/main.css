@@ -1,10 +1,15 @@
 body {
     font-size: 20px;
-    font-family: 'Product Sans', sans-serif
 }
 
 img {
     max-width: 100%
+}
+
+
+@font-face {
+    font-family: "SFPro";
+    src: url("../assets/fonts/SFPro.ttf");
 }
 
 h1,
@@ -13,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Product Sans', sans-serif;
+    font-family: 'SFPro', sans-serif;
     text-transform: full-width;
 }
 

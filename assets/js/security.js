@@ -50,7 +50,7 @@ function security() {
             sending POST requests from UI elements, into which attackers inject 
             fake links and image elements.\n
             Want an XSS payload? Try:\n
-            ⠀⠀<svg/onload=prompt(name)>\n
+            ⠀⠀<svg/onload=prompt()>\n
             (This is a type of XSS called "reflected XSS")\n`
         }
 

@@ -3,7 +3,7 @@ title: Keyspace
 date: February 2021
 ---
 
-![Keyspace.cloud](assets/keyspace_banner.png "Keyspace Android")
+![Keyspace.cloud](assets/images/keyspace_banner.png "Keyspace Android")
 
 Founding member of [keyspace.cloud](https://github.com/Keyspace-cloud), along with [Rohan](https://github.com/rohan-chaturvedi) and [Nimish](https://github.com/nimish-ks). 
 

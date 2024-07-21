@@ -3,7 +3,7 @@ title: Octopii
 date: March 2022
 ---
 
-![Octopii banner](assets/octopii_banner.png "Octopii banner")
+![Octopii banner](assets/images/octopii_banner.png "Octopii banner")
 
 Wrote [Octopii](https://github.com/redhuntlabs/Octopii), an AI-powered Personally Identifiable Information (PII) scanner powered by Haar Cascades, Tesseract, Optical Character Recognition (OCR) and NLTK. 
 

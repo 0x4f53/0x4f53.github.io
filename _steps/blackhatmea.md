@@ -3,7 +3,7 @@ title: BlackHat Middle East and Africa
 date: November 2023
 ---
 
-![Presenting in Riyadh](assets/meapresentation.jpeg "Presenting in Riyadh")
+![Presenting in Riyadh](assets/images/meapresentation.jpeg "Presenting in Riyadh")
 
 !سلام عليكم، سعوديه
 .شكراً للذكريات

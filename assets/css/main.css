@@ -1,15 +1,14 @@
+@font-face {
+    font-family: "SFPro";
+    src: url("../assets/fonts/SFPro.ttf");
+}
+
 body {
     font-size: 20px;
 }
 
 img {
     max-width: 100%
-}
-
-
-@font-face {
-    font-family: "SFPro";
-    src: url("../assets/fonts/SFPro.ttf");
 }
 
 h1,

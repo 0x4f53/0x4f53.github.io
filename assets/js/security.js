@@ -29,16 +29,17 @@ function security() {
         document.getElementById('photo').src = "assets/images/ryanbeckford.gif"
         document.getElementById('name').innerText = "⚠️ Warning"
         document.getElementById('occupation').innerText = "This site is being attacked. Please close this tab immediately!"
-        document.getElementById('pgp').hidden = true
+        document.getElementById('pgp').remove()
+        document.getElementById('resume').remove()
 
         tagRegex = /<.{3,}>/
 
         if (tagRegex.test(parameterValue)) {
             easterEggDescription = `Nice, you found an XSS vulnerability!
-            You provided the value\n
+            You provided the value:
             ⠀⠀${parameterValue}\n
             for the parameter key "${parameterKey}", which the gif at the end of the page tries to load, 
-            using JavaScript's "innerHTML" property.\nNow try the following payload:\n
+            using JavaScript's "innerHTML" property.\n\nNow try the following payload:
             ⠀⠀<svg/onload=alert(prompt("Enter%E2%A0%80your%E2%A0%80banking%E2%A0%80password"))>\n
             If your bank's website is vulnerable to this type of attack, an attacker can simply 
             ask you for your password and save your response in a database.\n
@@ -49,12 +50,12 @@ function security() {
             A lot of sites use this method for user interface customization and 
             sending POST requests from UI elements, into which attackers inject 
             fake links and image elements.\n
-            Want an XSS payload? Try:\n
+            Want an XSS payload? Try:
             ⠀⠀<svg/onload=prompt()>\n
             (This is a type of XSS called "reflected XSS")\n`
         }
 
-        document.getElementById('description').innerText = easterEggDescription
+        document.getElementById('blurb').innerText = easterEggDescription
 
         return
 

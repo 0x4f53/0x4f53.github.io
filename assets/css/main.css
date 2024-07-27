@@ -36,24 +36,24 @@ h6,
 p,
 details {
     font-family: SFText, sans-serif;
-    color: white;
+    color: whitesmoke;
 }
 
 .microblog-date {
     line-height: 0pt;
-    padding-bottom: 6px;
+    font-size: 25px;
 }
 
 mdui-button {
     line-height: 0pt;
     font-size: 20px;
-    color: aqua;
+    color: aquamarine;
     margin-right: 5px;
     border-color: rgba(255, 255, 255, 0.25);
 }
 
 a {
-    color: aqua;
+    color: aquamarine;
 }
 
 .microblog-card {
@@ -63,7 +63,8 @@ a {
 }
 
 .microblog-title {
-    font-size: 28px;
+    font-size: 26px;
+    font-weight: bold;
 }
 
 hr {

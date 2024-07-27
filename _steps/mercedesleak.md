@@ -1,5 +1,5 @@
 ---
-title: Mercedes Secret Leak discovery
+title: Mercedes-Benz Secret Leak discovery
 date: January 2024
 ---
 

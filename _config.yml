@@ -21,7 +21,7 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 lsi: false
-description: My projects, career etc.
+description: My projects and thoughts on random things.
 baseurl: "/jekyll-timeline"
 url: https://4f77616973.github.io
 color: "#f2f2f2"

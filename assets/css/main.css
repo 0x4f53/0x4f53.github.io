@@ -4,8 +4,13 @@
 }
 
 @font-face {
-    font-family: SFPro;
-    src: url("../fonts/SFPro.ttf") format('truetype');
+    font-family: SFDisplay;
+    src: url("../fonts/SFDisplay.otf") format('truetype');
+}
+
+@font-face {
+    font-family: SFText;
+    src: url("../fonts/SFText.otf") format('truetype');
 }
 
 @font-face {
@@ -34,7 +39,7 @@ h6,
 p,
 a,
 details {
-    font-family: SFPro, sans-serif;
+    font-family: SFText, sans-serif;
 }
 
 .item {

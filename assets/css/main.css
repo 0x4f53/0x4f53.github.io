@@ -20,10 +20,7 @@
 
 body {
     font-size: 20px;
-}
-
-img {
-    max-width: 100%
+    background-color: black;
 }
 
 code {
@@ -37,62 +34,36 @@ h4,
 h5,
 h6,
 p,
-a,
 details {
     font-family: SFText, sans-serif;
+    color: white;
 }
 
-.item {
-    padding-top: 55px;
-    min-height: 100px;
-    position: relative
+.microblog-date {
+    line-height: 0pt;
+    padding-bottom: 6px;
 }
 
-.item:before,
-.last-item:after {
-    background: #fff;
-    border: 8px solid #000;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    content: "";
-    margin-left: 1rem;
-    position: relative;
-    z-index: 1;
-    left: calc(2% - 36px)
+mdui-button {
+    line-height: 0pt;
+    font-size: 20px;
+    color: aqua;
+    margin-right: 5px;
+    border-color: rgba(255, 255, 255, 0.25);
 }
 
-.vertical-line {
-    width: 8px;
-    background-color: #000;
-    position: absolute;
-    left: calc(2% - 5px);
-    top: 0;
-    bottom: 0
+a {
+    color: aqua;
 }
 
-.item .card-panel {
-    margin: 0;
-    margin: 1rem 0 0 3rem;
-    border-radius: 15px;
-    padding: -50px;
+.microblog-card {
+    padding: 0px 15px;
+    background-color: black;
+    border-color: rgba(255, 255, 255, 0.25);
 }
 
-.item-date {
-    margin-top: -50px;
-    margin-left: 60px
-}
-
-.cv-title {
-    margin-bottom: 0;
-    margin-left: calc(2% - 5px);
-}
-
-.last-item {
-    padding-top: 80px;
-    height: 70px;
-    position: relative
+.microblog-title {
+    font-size: 28px;
 }
 
 hr {

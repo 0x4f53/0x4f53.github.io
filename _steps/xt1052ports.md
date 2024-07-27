@@ -8,4 +8,4 @@ date: December 2013
 
 My first major project, an attempt at reverse-engineering and porting some very popular features from the first ever Moto X. Became top Moto G repo of the week on XDA Developers.
 
-[Archived here](https://gitlab.com/ThomasCat/xt1052-apk-ports) (Don't judge too harshly, I was a kid that wanted to look cool)
+[Archived here](https://gitlab.com/ThomasCat/xt1052-apk-ports) (Please don't roast me, I was a kid trying to look cool)

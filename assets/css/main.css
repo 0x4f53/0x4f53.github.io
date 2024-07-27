@@ -43,8 +43,8 @@ details {
 }
 
 .item {
-    padding-top: 100px;
-    min-height: 150px;
+    padding-top: 55px;
+    min-height: 100px;
     position: relative
 }
 
@@ -74,23 +74,19 @@ details {
 
 .item .card-panel {
     margin: 0;
-    margin: 2rem 0 0 3rem;
-    border-radius: 25px;
+    margin: 1rem 0 0 3rem;
+    border-radius: 15px;
+    padding: -50px;
 }
 
 .item-date {
-    margin-top: -60px;
-    margin-left: 4.5rem
+    margin-top: -50px;
+    margin-left: 60px
 }
 
 .cv-title {
     margin-bottom: 0;
     margin-left: calc(2% - 5px);
-    line-height: 190%
-}
-
-.cv-title span {
-    padding: 1rem
 }
 
 .last-item {

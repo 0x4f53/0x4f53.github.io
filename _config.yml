@@ -1,5 +1,5 @@
 ---
-title: Owais Shaikh
+title: Hello! This is 0x4f.
 timezone: Asia/Kolkata
 collections:
   posts:
@@ -21,7 +21,7 @@ defaults:
 markdown: kramdown
 highlighter: rouge
 lsi: false
-description: My projects, career etc
+description: My projects, career etc.
 baseurl: "/jekyll-timeline"
 url: https://4f77616973.github.io
 color: "#f2f2f2"

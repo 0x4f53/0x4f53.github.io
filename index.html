@@ -107,15 +107,10 @@ layout: default
         {% for step in steps %}
         <div class="item">
             <i class="vertical-line"></i>
-            <h3 class="item-date">{{ step.date | date: '%B %Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y'
-                }}{% endif %}</h2>
+            <h4 class="item-date">{{ step.date | date: '%B %Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y}}{% endif %}</h4>
                 <div class="card-panel">
-                    <h4 class="card-title">
-                        {{ step.title }}
-                    </h4>
-                    <p>
-                        {{ step.content }}
-                    </p>
+                    <h4>{{ step.title }}</h4>
+                    <p>{{ step.content }}</p>
                 </div>
         </div>
         {% endfor %}

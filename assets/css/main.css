@@ -1,6 +1,16 @@
 @font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/Ubuntu.ttf") format('truetype');
+}
+
+@font-face {
     font-family: SFPro;
     src: url("../fonts/SFPro.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Monaco;
+    src: url("../fonts/Monaco.ttf") format('truetype');
 }
 
 body {
@@ -11,13 +21,19 @@ img {
     max-width: 100%
 }
 
+code {
+    font-family: Monaco, monospace;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6
- {
+h6,
+p,
+a,
+details {
     font-family: SFPro, sans-serif;
 }
 

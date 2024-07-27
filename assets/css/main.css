@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "SFPro";
-    src: url("../fonts/SFPro.ttf");
+    font-family: SFPro;
+    src: url("../fonts/SFPro.ttf") format('truetype');
 }
 
 body {
@@ -16,9 +16,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: 'SFPro', sans-serif;
-    text-transform: full-width;
+h6
+ {
+    font-family: SFPro, sans-serif;
 }
 
 .item {

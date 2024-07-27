@@ -25,6 +25,7 @@ body {
 
 code {
     font-family: Monaco, monospace;
+    color: whitesmoke;
 }
 
 h1,
@@ -39,9 +40,17 @@ details {
     color: whitesmoke;
 }
 
+img {
+    max-width: 100%;
+}
+
 .microblog-date {
     line-height: 0pt;
     font-size: 25px;
+}
+
+.microblog {
+    width: 100%;
 }
 
 mdui-button {
@@ -52,6 +61,10 @@ mdui-button {
     border-color: rgba(255, 255, 255, 0.25);
 }
 
+summary {
+    font-size: 15px;
+}
+
 a {
     color: aquamarine;
 }
@@ -60,6 +73,7 @@ a {
     padding: 0px 15px;
     background-color: black;
     border-color: rgba(255, 255, 255, 0.25);
+    width: 100%;
 }
 
 .microblog-title {

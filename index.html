@@ -21,14 +21,15 @@ layout: default
     <h5 id="occupation">Security Researcher &nbsp;×&nbsp; Software Engineer</h5>
 
     <details id="pgp">
-        <summary style="font-size: 15px;">OpenPGP key ▸</summary>
-        <br />
-        <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/5B4877332829B7F48ABEC1CBCA2D14E0F9F73BA8">
-            <code>5B48 7733 2829 B7F4 8ABE C1CB CA2D 14E0 F9F7 3BA8</code>
+        <summary>
+            OpenPGP key ▸
+        </summary>
+        <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/5B4877332829B7F48ABEC1CBCA2D14E0F9F73BA8"
+            style="font-family: Monaco;">
+            5B48 7733 2829 B7F4 8ABE C1CB CA2D 14E0 F9F7 3BA8
         </a>
-        <br />
-        <p> 
-            If you've received a signed document from me, 
+        <p>
+            If you've received a signed document from me,
             click on the key above to download it, then run the following commands:
         </p>
         <mdui-card class="microblog-card" variant="outlined">
@@ -36,20 +37,20 @@ layout: default
             <br />
             <code>gpg --verify &lt;file_name&gt;.signed --output &lt;file_name&gt;</code>
         </mdui-card>
+        <hr />
     </details>
 
     <br />
+
+    <p id="blurb">
+        Hi, I'm Owais. I'm a Security Researcher. I believe in solving complex problems with simple solutions. I love
+        breaking things down and exploring them in-depth, and contributing to open-source stuff.</p>
 
     <mdui-button variant="outlined" href="https://docs.google.com/document/d/1uOr6s3d2QueQjfH3GzVnUNHpAhw8Akxv"
         id="resume">
         View résumé
     </mdui-button>
 
-    <hr />
-
-    <p id="blurb">
-        Hi, I'm Owais. I'm a Security Researcher. I believe in solving complex problems with simple solutions. I love
-        breaking things down and exploring them in-depth, and contributing to open-source stuff.</p>
     <hr />
 
     <p>Connect with me</p>
@@ -91,16 +92,21 @@ layout: default
         <br /><br />
     </center>
 
-    {% assign steps = site.steps | sort: 'date' | reverse %}
-    {% for step in steps %}
-    <mdui-card class="microblog-card" variant="outlined">
-        <h4 class="microblog-title">{{ step.title }}</h4>
-        <p class="microblog-date">
-            {{ step.date | date: '%B %Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y}}{%endif %}
-        </p>
-        <p>{{ step.content }}</p>
-    </mdui-card>
-    {% endfor %}
+    <div class="microblog">
+        {% assign steps = site.steps | sort: 'date' | reverse %}
+        {% for step in steps %}
+
+        <mdui-card class="microblog-card" variant="outlined">
+            <h4 class="microblog-title">{{ step.title }}</h4>
+            <p class="microblog-date">
+                {{ step.date | date: '%B %Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y}}{%endif %}
+            </p>
+            <p>{{ step.content }}</p>
+        </mdui-card>
+        {% endfor %}
+    </div>
+
+
 </div>
 
 <center>

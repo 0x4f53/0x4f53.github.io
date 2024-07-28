@@ -19,7 +19,7 @@
 }
 
 body {
-    font-size: 20px;
+    font-size: 16px;
     background-color: black;
 }
 
@@ -46,7 +46,7 @@ img {
 
 .microblog-date {
     line-height: 0pt;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .microblog {
@@ -55,10 +55,16 @@ img {
 
 mdui-button {
     line-height: 0pt;
-    font-size: 20px;
-    color: aquamarine;
+    font-size: 18px;
+    color: aqua;
     margin-right: 5px;
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.33);
+}
+
+mdui-chip {
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0.33);
 }
 
 summary {
@@ -66,21 +72,21 @@ summary {
 }
 
 a {
-    color: aquamarine;
+    color: aqua;
 }
 
 .microblog-card {
     padding: 0px 15px;
     background-color: black;
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.33);
     width: 100%;
 }
 
 .microblog-title {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 hr {
-    opacity: 25%;
+    opacity: 33%;
 }

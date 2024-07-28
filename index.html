@@ -22,25 +22,30 @@ layout: default
 
     <details id="pgp">
         <summary>
-            OpenPGP key ▸
+            🔏 OpenPGP key ▸
         </summary>
-        <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/5B4877332829B7F48ABEC1CBCA2D14E0F9F73BA8"
-            style="font-family: Monaco;">
+        <mdui-chip
+            style="font-family: Monaco; color: greenyellow;"
+            variant="outlined"
+            href="https://keys.openpgp.org/vks/v1/by-fingerprint/5B4877332829B7F48ABEC1CBCA2D14E0F9F73BA8"
+        >
             5B48 7733 2829 B7F4 8ABE C1CB CA2D 14E0 F9F7 3BA8
-        </a>
+        </mdui-chip>
         <p>
             If you've received a signed document from me,
             click on the key above to download it, then run the following commands:
         </p>
-        <mdui-card class="microblog-card" variant="outlined">
-            <code>gpg --import &lt;key_name&gt;.asc</code>
-            <br />
-            <code>gpg --verify &lt;file_name&gt;.signed --output &lt;file_name&gt;</code>
+        <mdui-card 
+            class="microblog-card" 
+            variant="outlined" 
+            style="padding: 10px 15px; max-width: max-content;"
+        >
+            <code style="color: greenyellow;">gpg --import &lt;key_name&gt;.asc</code>
+            <br/>
+            <code style="color: greenyellow;">gpg --verify &lt;file_name&gt;.signed --output &lt;file_name&gt;</code>
         </mdui-card>
         <hr />
     </details>
-
-    <br />
 
     <p id="blurb">
         Hi, I'm Owais. I'm a Security Researcher. I believe in solving complex problems with simple solutions. I love

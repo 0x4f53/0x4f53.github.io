@@ -1,8 +1,7 @@
 ---
 title: secretsnitch
-date: January 2024
+date: May 2024
 ---
-As seen at
 
 [![BlackHat MEA 2024](https://img.shields.io/badge/BlackHat%20MEA%202024-222.svg?style=flat-square&logo=redhat)](https://blackhatmea.com/blackhat-arsenal)
 

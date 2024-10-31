@@ -3,6 +3,12 @@ title: Octopii
 date: March 2022
 ---
 
+As seen at
+
+[![BlackHat USA 2022](https://img.shields.io/badge/BlackHat%20USA%202023-222.svg?style=flat-square&logo=redhat)](https://www.blackhat.com/us-22/arsenal/schedule/#octopii---ai-powered-personal-identifiable-information-pii-scanner-27993)
+[![BlackHat MEA 2023](https://img.shields.io/badge/BlackHat%20MEA%202023-222.svg?style=flat-square&logo=redhat)](https://blackhatmea.com/session/octopii-ai-powered-personal-identifiable-information-pii-scanner)
+[![BlackHat USA 2024](https://img.shields.io/badge/BlackHat%20USA%202024-222.svg?style=flat-square&logo=redhat)](https://www.blackhat.com/us-24/arsenal/schedule/#octopii-v-39624)
+
 ![Octopii banner](assets/images/octopii_banner.png "Octopii banner")
 
 Wrote [Octopii](https://github.com/redhuntlabs/Octopii), an AI-powered Personally Identifiable Information (PII) scanner powered by Haar Cascades, Tesseract, Optical Character Recognition (OCR) and NLTK. 

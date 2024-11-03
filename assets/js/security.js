@@ -22,6 +22,7 @@ function security() {
         // Thanks for checking out secretsnitch! It means a lot to me 🤧
         var openAiApiKey = "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";
         console.log(openAiApiKey)
+        // Don't worry, the secret is fake
 
         if (parameterKey != "" && parameterValue == "") {
             window.alert("Where's the payload, dumbass?")

@@ -9,7 +9,7 @@ date: March 2022
 
 ![Octopii banner](assets/images/octopii_banner.png "Octopii banner")
 
-Wrote [Octopii](https://github.com/redhuntlabs/Octopii), an AI-powered Personally Identifiable Information (PII) scanner powered by Haar Cascades, Tesseract, Optical Character Recognition (OCR) and NLTK. 
+Wrote [Octopii](https://github.com/redhuntlabs/Octopii), an AI-powered Personally Identifiable Information (PII) scanner powered by Haar Cascades, Tesseract, Optical Character Recognition (OCR) and NLTK.
 
 I came across this problem when I was performing some research at work. Since we collect IP addresses and such, I received one,
 where Apache directory listing was enabled. It belonged to a small business, and it had pictures of hundreds of Indian government ID (Aadhaar, PAN, drivers' licenses). I was looking for an open-source tool that helped me automate the detection of these resources and couldn't, and so I tried making one. The first version was terrible, since I was tackling the problem incorrectly. In order to train

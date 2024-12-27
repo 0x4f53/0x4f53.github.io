@@ -7,5 +7,4 @@ Performed my own automation setup, with a Raspberry Pi 1A, IFTTT, Tasker and a B
 
 ![tasker](assets/images/taskerauto.png "screenshot")
 
-I later realized how many attack vectors it had and how important educating yourself first is,
-especially before exposing your home devices to the internet.
+I later realized how many attack vectors it had and how important educating yourself on these things is, especially before exposing your home network to the internet.

@@ -3,16 +3,57 @@ layout: default
 ---
 
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9624599461311442"
-        crossorigin="anonymous"></script>
+    <script async 
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9624599461311442"
+            crossorigin="anonymous">
+    </script>
     <meta name="google-adsense-account" content="ca-pub-9624599461311442">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/security.js"></script>
 
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/ads.js"></script>
+    <script>
+        (function(){
+            var enabledEl = document.getElementById('adb-enabled');
+            var disabledEl = document.getElementById('adb-not-enabled');
+            function adBlockDetected() {
+                enabledEl.style.display = 'block';
+                disabledEl.style.display = 'none';
+            }
+            
+            function adBlockNotDetected() {
+                disabledEl.style.display = 'block';
+                enabledEl.style.display = 'none';
+            }
+            
+            if (typeof window.adblockDetector === 'undefined') {
+                adBlockDetected();
+            } else {
+                window.adblockDetector.init(
+                    {
+                        debug: true,
+                        found: function(){
+                            adBlockDetected();
+                        },
+                        notFound: function(){
+                            adBlockNotDetected();
+                        }
+                    }
+                );
+            }
+        }());
+    </script>
+
 </head>
 
 <div class="container row">
+
+    <div class="center">
+        <h5 class="bg-success" id="adb-not-enabled" style="display: none;">AdBlock is disabled</h5>
+        <h5 class="bg-danger" id="adb-enabled" style="display: none;">AdBlock is enabled</h5>
+        </div>
+
     <br>
 
     <img id="photo" src="https://avatars.githubusercontent.com/u/71916237?v=4" width="120">

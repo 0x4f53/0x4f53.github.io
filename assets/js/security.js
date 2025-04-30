@@ -33,7 +33,7 @@ function security() {
 
         document.getElementById('photo').src = "assets/images/ryanbeckford.gif"
         document.getElementById('name').innerText = "⚠️ Warning"
-        document.getElementById('occupation').innerText = "This site is being attacked. Please close this tab immediately!"
+        document.getElementById('occupation').innerText = "Cross-site scripting attack detected. Please close this tab immediately!"
         document.getElementById('pgp').remove()
         document.getElementById('resume').remove()
 

@@ -12,47 +12,11 @@ layout: default
 
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/security.js"></script>
 
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/ads.js"></script>
-    <script>
-        (function(){
-            var enabledEl = document.getElementById('adb-enabled');
-            var disabledEl = document.getElementById('adb-not-enabled');
-            function adBlockDetected() {
-                enabledEl.style.display = 'block';
-                disabledEl.style.display = 'none';
-            }
-            
-            function adBlockNotDetected() {
-                disabledEl.style.display = 'block';
-                enabledEl.style.display = 'none';
-            }
-            
-            if (typeof window.adblockDetector === 'undefined') {
-                adBlockDetected();
-            } else {
-                window.adblockDetector.init(
-                    {
-                        debug: true,
-                        found: function(){
-                            adBlockDetected();
-                        },
-                        notFound: function(){
-                            adBlockNotDetected();
-                        }
-                    }
-                );
-            }
-        }());
-    </script>
+    <script src="{{ site.baseurl }}/assets/js/very_important.js"></script>
 
 </head>
 
 <div class="container row">
-
-    <div class="center">
-        <h5 class="bg-success" id="adb-not-enabled" style="display: none;">AdBlock is disabled</h5>
-        <h5 class="bg-danger" id="adb-enabled" style="display: none;">AdBlock is enabled</h5>
-        </div>
 
     <br>
 
@@ -60,6 +24,11 @@ layout: default
 
     <h4 id="name">Owais Shaikh</h4>
     <h5 id="occupation">Security Researcher &nbsp;×&nbsp; Software Engineer</h5>
+
+    <div class="center">
+        <h5 class="bg-success" id="adb-not-enabled" style="display: none;">AdBlock is disabled</h5>
+        <h5 class="bg-danger" id="adb-enabled" style="display: none;">AdBlock is enabled</h5>
+    </div>
 
     <details id="pgp">
         <summary>
@@ -129,7 +98,7 @@ layout: default
         <mdui-card class="microblog-card" variant="outlined">
             <h4 class="microblog-title">{{ step.title }}</h4>
             <p class="microblog-date">
-                {{ step.date | date: '%B %Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y}}{%endif %}
+                {{ step.date | date: '%B %Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y'}}{%endif %}
             </p>
             <p>{{ step.content }}</p>
         </mdui-card>
